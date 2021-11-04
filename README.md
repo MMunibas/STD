@@ -39,9 +39,7 @@ You are ready to run the code.
 To predict product state distributions for initial conditions from the test set (77 data sets).  Go to the `evaluation_InitialCondition` folder.
 
 *Don't remove (external_plotting directory).* 
-```diff
-! You need to explain why the external_plotting folder is required and if necessary put it with the provided data. Otherwise when submitting the code set the flag `external_plotting = False`.
-```
+
 
 ```
 python3 evaluate.py 
@@ -70,15 +68,13 @@ Edit the code `evaluation.py` in the folder `evaluation_Temperature`, to specify
 
 Then run the code with the following command to obtain a file containing the desired accuracy measures, as well as a PDF with the corresponding plots for (3) example temperatures. 
 
+
+*Don't remove (external_plotting directory).* 
+
 ```
 python3 evaluate.py
 ```
-
-**It does not run: 
-Error: *FileNotFoundError: [Errno 2] No such file or directory: './external_plotting/NN_pe362_NN.txt'* 
-**
-
- The evaluations are compared with available QCT data inside `QCT_Data/Temp_Data`
+The evaluations are compared with available QCT data inside `QCT_Data/Temp_Data`
 
 The complete list of temperatures <img src="https://render.githubusercontent.com/render/math?math=T_{rot}"> and <img src="https://render.githubusercontent.com/render/math?math=T_{vib}"> can be read from the file `tinput.dat` in `data_preprocessing/TEMP/tinput.dat` .
 
@@ -89,7 +85,3 @@ The complete list of temperatures <img src="https://render.githubusercontent.com
  ```diff
  !*Complete name of paper or do you want to cite the repository? Also, add an email or responsable*
  ```
-
-
-# StateToDistribution
-# StateToDistribution
