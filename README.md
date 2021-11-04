@@ -45,9 +45,6 @@ To predict product state distributions for initial conditions from the test set 
 python3 evaluate.py 
 ```
 
-**It does not run: 
-Error: *FileNotFoundError: [Errno 2] No such file or directory: './external_plotting/NN_pe362_NN.txt'* 
-**
 
 The `evaluate.py` file predicts product state distributions for all initial conditions within the test set and compares them with reference data obtained from quasi-classical trajectory similations (QCT).
 
